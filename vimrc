@@ -1,3 +1,12 @@
+"No compatibility mode
+set nocompatible
+
+"Highlight syntax
+syntax enable
+
+"Enable plugins
+filetype plugin on
+
 "Set colour Scheme
 color codedark
 
@@ -11,12 +20,16 @@ set autoindent
 set relativenumber 
 set number
 
-"Highlight syntax
-syntax on
-
 "Map leaving insert mode to jk
 inoremap jk <ESC>
 
 "Maps space to leader and has a search window in the bottom
 map <space> <leader>
+
+"FINDING FILES
+"Search sub-directorys
+set path+=**
+
+"Display matching files when tabbing
+set wildmenu
 
