@@ -21,7 +21,7 @@ set relativenumber
 set number
 
 "Map leaving insert mode to jk
-inoremap jk <ESC>
+inoremap hh <ESC>
 
 "Maps space to leader and has a search window in the bottom
 map <space> <leader>
@@ -32,4 +32,5 @@ set path+=**
 
 "Display matching files when tabbing
 set wildmenu
+
 
