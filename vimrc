@@ -33,4 +33,13 @@ set path+=**
 "Display matching files when tabbing
 set wildmenu
 
+"Use backspace for indents and eol
+set backspace=indent,eol
+
+"Keep 4 lines below cursor
+set scrolloff=4
+
+"Allow editing of vimrc and reload on the fly
+nmap <leader>vr :sp ~\vimfiles\vimrc<cr>
+nmap <leader>so :source ~\vimfiles\vimrc<cr>
 
