@@ -38,8 +38,12 @@ set backspace=indent,eol
 
 "Keep 4 lines below cursor
 set scrolloff=4
-
+set textwidth=79
+set colorcolumn=80
 "Allow editing of vimrc and reload on the fly
 nmap <leader>vr :sp ~\vimfiles\vimrc<cr>
 nmap <leader>so :source ~\vimfiles\vimrc<cr>
 
+"Fold settings
+set foldmethod=indent
+set foldlevelstart=99
