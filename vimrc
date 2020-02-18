@@ -58,3 +58,9 @@ set laststatus=2
 set showmode
 set showcmd
 
+call plug#begin('C:\Users\keian\vimfiles\plugged')
+
+plug 'lervag/vimtex'
+Plug 'dense-analysis/ale'
+
+call plug#end()
