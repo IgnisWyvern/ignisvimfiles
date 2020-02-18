@@ -1,6 +1,9 @@
 "No compatibility mode
 set nocompatible
 
+"Encoding
+set encoding=utf-8
+
 "Disable modelines
 set modelines=0
 
@@ -60,7 +63,8 @@ set showcmd
 
 call plug#begin('C:\Users\keian\vimfiles\plugged')
 
-plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 Plug 'dense-analysis/ale'
 
 call plug#end()
+
