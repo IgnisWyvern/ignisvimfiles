@@ -1,6 +1,15 @@
+call plug#begin('C:\Users\keian\vimfiles\plugged')
+
+Plug 'lervag/vimtex'
+Plug 'dense-analysis/ale'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
 "No compatibility mode
 set nocompatible
-
+set updatetime=200
 "Encoding
 set encoding=utf-8
 
@@ -60,11 +69,6 @@ set ttyfast
 set laststatus=2
 set showmode
 set showcmd
+set signcolumn=yes
 
-call plug#begin('C:\Users\keian\vimfiles\plugged')
-
-Plug 'lervag/vimtex'
-Plug 'dense-analysis/ale'
-
-call plug#end()
-
+let g:deoplete#enable_at_startup = 1
