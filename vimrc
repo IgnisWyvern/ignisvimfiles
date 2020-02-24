@@ -55,6 +55,7 @@ set backspace=indent,eol
 set scrolloff=5
 set textwidth=79
 set colorcolumn=80
+
 "Allow editing of vimrc and reload on the fly
 nmap <leader>vr :sp ~\vimfiles\vimrc<cr>
 nmap <leader>so :source ~\vimfiles\vimrc<cr>
