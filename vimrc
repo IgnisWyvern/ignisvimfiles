@@ -1,4 +1,4 @@
-call plug#begin('C:\Users\keian\vimfiles\plugged')
+call plug#begin()
 
 Plug 'lervag/vimtex'
 Plug 'dense-analysis/ale'
@@ -57,8 +57,9 @@ set textwidth=79
 set colorcolumn=80
 
 "Allow editing of vimrc and reload on the fly
-nmap <leader>vr :sp ~\vimfiles\vimrc<cr>
-nmap <leader>so :source ~\vimfiles\vimrc<cr>
+nmap <leader>vr :sp ~/.vim/vimrc<cr>
+
+nmap <leader>so :source ~/.vim/vimrc<cr>
 
 "Fold settings
 set foldmethod=indent
