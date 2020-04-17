@@ -9,7 +9,8 @@ call plug#end()
 
 "No compatibility mode
 set nocompatible
-set updatetime=200
+set updatetime=300
+"
 "Encoding
 set encoding=utf-8
 
@@ -24,6 +25,7 @@ filetype plugin on
 
 "Set colour Scheme
 color codedark
+set lazyredraw
 
 "Enable 256 colours
 set t_Co=256
@@ -31,11 +33,16 @@ set t_Co=256
 "Enable auto indent
 set autoindent
 
+"tab stuff
+set tabstop=4
+set softtabstop=4
+set expandtab
+
 "Set line numbers
 set relativenumber 
 set number
 
-"Map leaving insert mode to jk
+"Map leaving insert mode to hh
 inoremap hh <ESC>
 
 "Maps space to leader and has a search window in the bottom
@@ -49,7 +56,16 @@ set path+=**
 set wildmenu
 
 "Use backspace for indents and eol
-set backspace=indent,eol
+set backspace=indent,eol,start
+
+"spell stuff
+set spelllang=en_gb
+map <leader>ss :setlocal spell!<cr>
+hi SpellBad ctermbg=124
+
+"hightlight search
+set hlsearch
+set incsearch
 
 "Keep 4 lines below cursor
 set scrolloff=5
@@ -58,7 +74,6 @@ set colorcolumn=80
 
 "Allow editing of vimrc and reload on the fly
 nmap <leader>vr :sp ~/.vim/vimrc<cr>
-
 nmap <leader>so :source ~/.vim/vimrc<cr>
 
 "Fold settings
@@ -67,6 +82,7 @@ set foldlevelstart=99
 
 "Smoooooth
 set ttyfast
+"
 "Pretty bar
 set laststatus=2
 set showmode
