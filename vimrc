@@ -51,7 +51,6 @@ set signcolumn=yes "Always keeps the column on the left
 set relativenumber 
 set number
 
-"Keep 4 lines below cursor
 set scrolloff=5 "Keeps 5 lines below cursor
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
